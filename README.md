@@ -160,7 +160,7 @@ Creates an order on the cashfree server and sends a payment link to the customer
 
 -  <code>context</code>: Context object of the calling activity is required for this method. In most of the cases this will mean sending the instance of the calling activity (this).
 
--  <code>params</code>: A map of all the relevant parameters. Check the request parameters section for details.
+-  <code>params</code>: A map of all the relevant parameters. Check the [request parameters](#request-params) section for details.
 
 -  <code>token</code>: The token generated from **Step 4**.
 
@@ -186,7 +186,7 @@ void collectPayment(Activity context, Map<String, String> params,
 
 -  <code>context</code>: Context object of the calling activity is required for this method. In most of the cases this will mean sending the instance of the calling activity (this).
 
--  <code>params</code>:  A map of all the relevant parameters. Check the request parameters section for details.
+-  <code>params</code>:  A map of all the relevant parameters. Check the [request parameters](#request-params) section for details.
 
 -  <code>token</code>: The token generated from **Step 4**.
 
