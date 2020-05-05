@@ -236,7 +236,7 @@ protected  void  onActivityResult(int requestCode, int resultCode, Intent data) 
 | <code>orderAmount</code> | Yes       | Bill amount of the order      |
 | <code>orderCurrency</code> | Yes       | Currency code. Default is INR      |
 | <code>orderNote</code>            | No       | A help text to make customers know more about the order                                |
-| <code>agentAlias</code> | No    | Name of the agent (Valid)     |
+| <code>agentAlias</code> | Yes    | Name of the agent (Valid)     |
 | <code>customerPhone</code> | Yes    | Phone number of customer     |
 | <code>customerEmail</code> | Yes    | Email id of the customer     |
 | <code>notifyUrl</code> | No    | Notification URL for server-server communication. Useful when user’s connection drops after completing payment.     |
