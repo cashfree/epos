@@ -272,7 +272,7 @@ These parameters are sent as extras to the onActivityResult(). They contain the 
     params.put(PARAM_CUSTOMER_PHONE, <VALID_PHONE_NO>);
     params.put(PARAM_CUSTOMER_EMAIL,<VALID_EMAIL_ID>);
     params.put(PARAM_NOTIFY_URL,"https://www.yourendpoint.com/");
-    params.put(PARAM_ORDER_CURRENCY, orderTokenApi.getOrderCurrency());
+    params.put(PARAM_ORDER_CURRENCY, "INR");
     
     String stage = <TEST or PROD>;
     String token = <cftoken generated for this order>
