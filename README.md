@@ -258,3 +258,27 @@ These parameters are sent as extras to the onActivityResult(). They contain the 
 | <code>signature</code>  | Response signature, more [here.](https://docs.cashfree.com/pg/cf-checkout/#response-verification)    |
 
 
+## Sample Code
+
+```java
+    //Change the values inside <> to real values
+    Map<String, String> params = new HashMap<>();
+    params.put(PARAM_APP_ID, <APP_ID>);
+    params.put(PARAM_ORDER_ID, "order1");
+    params.put(PARAM_ORDER_AMOUNT, "1");
+    params.put(PARAM_ORDER_NOTE, "Cashfree Test");
+    params.put(PARAM_CUSTOMER_NAME, "Cashfree");
+    params.put(PARAM_AGENT_ALIAS, "AgentAlias");
+    params.put(PARAM_CUSTOMER_PHONE, <VALID_PHONE_NO>);
+    params.put(PARAM_CUSTOMER_EMAIL,<VALID_EMAIL_ID>);
+    params.put(PARAM_NOTIFY_URL,"https://www.yourendpoint.com/");
+    params.put(PARAM_ORDER_CURRENCY, orderTokenApi.getOrderCurrency());
+    
+    String stage = <TEST or PROD>;
+    String token = <cftoken generated for this order>
+    
+    CFCollectAPI cfPaymentService = CFPOSService.getCFPOSServiceInstance();
+    //Replace with the SDK function according to your requirement
+    cfPaymentService.collectPayment(CFePosActivity.this, params, token, stage);
+```
+
